@@ -98,7 +98,14 @@ class ViewController: NSViewController {
     @objc private func getURL() {
         guard inputField.stringValue != "" else { return }
         
-        outputField.stringValue = inputField.stringValue
+        guard URL(string: inputField.stringValue) != nil else { return }
+        
+        NetworkManager.shared.getShortenedURL(urlString: inputField.stringValue) { (result) in
+            DispatchQueue.main.async {
+                self.outputField.stringValue = result
+            }
+        }
+        
         clipboardButton.layer?.borderColor = .clear
     }
 

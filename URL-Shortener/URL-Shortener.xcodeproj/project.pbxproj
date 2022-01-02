@@ -11,6 +11,8 @@
 		E04495792781383B006759E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04495782781383B006759E3 /* ViewController.swift */; };
 		E044957B2781383C006759E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E044957A2781383C006759E3 /* Assets.xcassets */; };
 		E044957E2781383C006759E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E044957C2781383C006759E3 /* Main.storyboard */; };
+		E0F3C21E278231B500C532DF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F3C21D278231B500C532DF /* NetworkManager.swift */; };
+		E0F3C2202782331000C532DF /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F3C21F2782331000C532DF /* APIResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		E044957D2781383C006759E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E044957F2781383C006759E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E04495802781383C006759E3 /* URL_Shortener.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = URL_Shortener.entitlements; sourceTree = "<group>"; };
+		E0F3C21D278231B500C532DF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E0F3C21F2782331000C532DF /* APIResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,10 @@
 		E04495752781383B006759E3 /* URL-Shortener */ = {
 			isa = PBXGroup;
 			children = (
-				E04495762781383B006759E3 /* AppDelegate.swift */,
 				E04495782781383B006759E3 /* ViewController.swift */,
+				E0F3C21D278231B500C532DF /* NetworkManager.swift */,
+				E0F3C21F2782331000C532DF /* APIResponseModel.swift */,
+				E04495762781383B006759E3 /* AppDelegate.swift */,
 				E044957A2781383C006759E3 /* Assets.xcassets */,
 				E044957C2781383C006759E3 /* Main.storyboard */,
 				E044957F2781383C006759E3 /* Info.plist */,
@@ -133,8 +139,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F3C21E278231B500C532DF /* NetworkManager.swift in Sources */,
 				E04495792781383B006759E3 /* ViewController.swift in Sources */,
 				E04495772781383B006759E3 /* AppDelegate.swift in Sources */,
+				E0F3C2202782331000C532DF /* APIResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
